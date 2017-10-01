@@ -1,7 +1,16 @@
 package DesignPattern.BuilderPattern;
 
 /**
- * Created by john on 2017/10/1.
+ * 可口可乐
  */
-public class Coke {
+public class Coke extends ColdDrink{
+    @Override
+    public float price() {
+        return 5.0f;
+    }
+
+    @Override
+    public String name() {
+        return "可口可乐";
+    }
 }

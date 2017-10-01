@@ -1,7 +1,11 @@
 package DesignPattern.BuilderPattern;
 
 /**
- * Created by john on 2017/10/1.
+ * 纸盒包装
  */
-public class Wrapper {
+public class Wrapper implements Packing{
+    @Override
+    public String Pack() {
+        return "纸盒包装";
+    }
 }

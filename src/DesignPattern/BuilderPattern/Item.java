@@ -1,7 +1,11 @@
 package DesignPattern.BuilderPattern;
 
 /**
- * Created by john on 2017/10/1.
+ * 食物条目接口
  */
 public interface Item {
+    public String name();
+    public Packing packing();
+    public float price();
 }
+

@@ -1,7 +1,11 @@
 package DesignPattern.BuilderPattern;
 
 /**
- * Created by john on 2017/10/1.
+ *  瓶装
  */
-public class Bottle {
+public class Bottle implements Packing{
+    @Override
+    public String Pack() {
+        return "瓶装";
+    }
 }

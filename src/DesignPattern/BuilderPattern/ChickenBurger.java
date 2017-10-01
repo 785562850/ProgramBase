@@ -1,7 +1,16 @@
 package DesignPattern.BuilderPattern;
 
 /**
- * Created by john on 2017/10/1.
+ * 鸡腿堡
  */
-public class ChickenBurger {
+public class ChickenBurger extends Burger{
+    @Override
+    public float price() {
+        return 25.0f;
+    }
+
+    @Override
+    public String name() {
+        return "鸡腿堡";
+    }
 }

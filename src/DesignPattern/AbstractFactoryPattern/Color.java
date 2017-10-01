@@ -3,5 +3,6 @@ package DesignPattern.AbstractFactoryPattern;
 /**
  * Created by john on 2017/10/1.
  */
-public class Color {
+public interface Color {
+    void fill();
 }

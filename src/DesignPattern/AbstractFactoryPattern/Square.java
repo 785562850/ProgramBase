@@ -1,8 +1,5 @@
-package DesignPattern.FactoryPattern;
+package DesignPattern.AbstractFactoryPattern;
 
-/**
- * Created by john on 2017/10/1.
- */
 public class Square implements Shape {
     @Override
     public void draw() {

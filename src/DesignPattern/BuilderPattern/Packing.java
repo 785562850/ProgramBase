@@ -1,7 +1,8 @@
 package DesignPattern.BuilderPattern;
 
 /**
- * Created by john on 2017/10/1.
+ * 食品包装接口
  */
-public class Packing {
+public interface Packing {
+    public String Pack();
 }
