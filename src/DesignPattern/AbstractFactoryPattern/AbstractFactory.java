@@ -5,6 +5,7 @@ package DesignPattern.AbstractFactoryPattern;
  * 创建型模式
  * 意图：提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类。
  * 使用场景：在一个产品族里面，定义多个产品。
+ * 实例：1、QQ 换皮肤，一整套一起换。 2、生成不同操作系统的程序。
  * △注意类爆炸
  */
 public  abstract class AbstractFactory {
