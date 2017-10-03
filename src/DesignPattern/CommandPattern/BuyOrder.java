@@ -3,10 +3,10 @@ package DesignPattern.CommandPattern;
 /**
  * Created by john on 2017/10/2.
  */
-public class BuyStock implements Order{
+public class BuyOrder implements Order{
     private Stock stock;
 
-    public BuyStock(Stock stock) {
+    public BuyOrder(Stock stock) {
         this.stock = stock;
     }
 
