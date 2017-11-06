@@ -3,7 +3,7 @@ package DesignPattern.BusinessDelegatePattern;
 /**
  * Created by john on 2017/10/3.
  */
-public class JMSService  implements BusinessService {
+public class JMSServiceImpl implements BusinessService {
 
     @Override
     public void doProcessing() {

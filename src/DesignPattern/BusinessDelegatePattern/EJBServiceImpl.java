@@ -3,7 +3,7 @@ package DesignPattern.BusinessDelegatePattern;
 /**
  * Created by john on 2017/10/3.
  */
-public class EJBService implements BusinessService{
+public class EJBServiceImpl implements BusinessService{
     @Override
     public void doProcessing() {
         System.out.println("Processing task by invoking EJB Service");

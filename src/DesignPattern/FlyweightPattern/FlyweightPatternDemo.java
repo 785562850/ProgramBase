@@ -4,8 +4,8 @@ package DesignPattern.FlyweightPattern;
  * Created by john on 2017/10/2.
  */
 public class FlyweightPatternDemo {
-    private static final String colors[] =
-            { "Red", "Green", "Blue", "White", "Black" };
+    private static final String[] colors =
+            {"Red", "Green", "Blue", "White", "Black"};
     public static void main(String[] args) {
 
         for(int i=0; i < 20; ++i) {

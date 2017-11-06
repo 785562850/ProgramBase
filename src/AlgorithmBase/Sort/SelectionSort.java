@@ -4,12 +4,15 @@ import java.util.List;
 
 /**
  * 选择排序
+ * 算法步骤： 1.首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置
+ *          2.再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。
+ *          3.重复第二步，直到所有元素均排序完毕。
  */
 public class SelectionSort {
     public void sort(List<Num> nums,String type) throws Exception {
-        if(type.equalsIgnoreCase("DESC")){
+        if("DESC".equalsIgnoreCase(type)){
             descSort(nums);
-        }else if(type.equalsIgnoreCase("ASC")){
+        }else if("ASC".equalsIgnoreCase(type)){
             ascSort(nums);
         }else {
             throw new Exception("排序类型指定错误");
@@ -29,7 +32,7 @@ public class SelectionSort {
                 }
             }
             if(min!=i) {
-                swap(nums.get(i), nums.get(min));
+                nums.get(i).swap(nums.get(min));
             }
         }
     }
@@ -48,13 +51,9 @@ public class SelectionSort {
                 }
             }
             if(max!=i) {
-                swap(nums.get(i), nums.get(max));
+              nums.get(i).swap(nums.get(max));
             }
         }
     }
-    public void swap(Num num1,Num num2){
-        int temp=num1.getValue();
-        num1.setValue(num2.getValue());
-        num2.setValue(temp);
-    }
+
 }

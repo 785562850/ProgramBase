@@ -71,6 +71,7 @@ public class Employee {
         return subordinates;
     }
 
+    @Override
     public String toString(){
         return ("Employee :[ Name : "+ name
                 +", dept : "+ dept + ", salary :"

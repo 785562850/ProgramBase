@@ -5,10 +5,10 @@ package DesignPattern.BusinessDelegatePattern;
  */
 public class BusinessLookUp {
     public BusinessService getBusinessService(String serviceType){
-        if(serviceType.equalsIgnoreCase("EJB")){
-            return new EJBService();
+        if("EJB".equalsIgnoreCase(serviceType)){
+            return new EJBServiceImpl();
         }else {
-            return new JMSService();
+            return new JMSServiceImpl();
         }
     }
 }

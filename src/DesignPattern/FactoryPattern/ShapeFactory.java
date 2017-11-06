@@ -24,11 +24,11 @@ public class ShapeFactory {
          if(shapeType==null){
              return null;
          }
-         if(shapeType.equalsIgnoreCase("Square")){
+         if("Square".equalsIgnoreCase(shapeType)){
              return new Square();
-         }else if(shapeType.equalsIgnoreCase("Circle")){
+         }else if("Circle".equalsIgnoreCase(shapeType)){
              return  new Circle();
-         }else if(shapeType.equalsIgnoreCase("Rectangle")){
+         }else if("Rectangle".equalsIgnoreCase(shapeType)){
              return new Rectangle();
          }
          return null;

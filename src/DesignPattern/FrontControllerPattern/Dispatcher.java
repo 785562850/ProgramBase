@@ -12,7 +12,7 @@ public class Dispatcher {
         homeView = new HomeView();
     }
     public void dispatch(String request){
-        if(request.equalsIgnoreCase("home")){
+        if("home".equalsIgnoreCase(request)){
             homeView.show();
         }else {
             studentView.show();
